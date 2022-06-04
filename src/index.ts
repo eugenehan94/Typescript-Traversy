@@ -122,7 +122,7 @@ function getArray<T>(items: T[]): T[]{
     return new Array().concat(items)
 }
 
-let numArray = getArray([1,2,3,4])
-let stringArray = getArray(["brad", "John", "Jill"])
+let numArray = getArray<number>([1,2,3,4])
+let stringArray = getArray<string>(["brad", "John", "Jill"])
 
-numArray.push("hello")
+numArray.push(5)
